@@ -1,0 +1,34 @@
+<!Prototype html>
+<html>
+
+    <head>
+        <title>Login page</title>
+	</head>
+		<!--Displays URL heading-->
+
+    <body>
+         <h1>CSC425 Online Store</h1>
+        <form name="login">Username
+            <input type="text" name="userid" />Password
+            <input type="password" name="pswrd" />
+            <input type="button" onclick="check(this.form)" value="Login" />
+            <input type="reset" value="Cancel" />
+	        </form>
+			<!--creates form to input username and password-->
+			
+        <script language="javascript">
+            function check(form) { 
+			<!--function to check username & password-->
+                  if (form.userid.value == "John Doe" && form.pswrd.value == "password") {
+				  <!--the following code checks whether the entered username and password are matching-->
+                    window.open('file:///C:/Users/Pinkellie/Documents/Trident/CSC425/Module%202/Program%20Code/HW_2.html') 
+					<!--opens the target page while Id & password matches-->
+                } else {
+                    alert("Error Password or Username") 
+					<!--displays error message-->
+                }
+            }
+        </script>
+    </body>
+
+</html>
